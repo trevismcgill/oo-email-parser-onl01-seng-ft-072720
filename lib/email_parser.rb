@@ -13,7 +13,7 @@ binding.pry
 end
 
 def parse
-
+@email
 end
 
 
