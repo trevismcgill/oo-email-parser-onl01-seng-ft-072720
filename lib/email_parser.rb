@@ -9,6 +9,7 @@ attr_accessor :email
 
 def initialize(arg)
 binding.pry
+@email = arg.split(",")
 end
 
 def parse
