@@ -14,6 +14,7 @@ end
 
 def parse
 @email.split(/[,\s]+/)
+binding.pry
 end
 
 
