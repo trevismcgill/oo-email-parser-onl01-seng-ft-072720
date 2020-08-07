@@ -4,40 +4,18 @@ require "pry"
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
-# class EmailAddressParser
-# attr_accessor :email
-#
-# def initialize(arg)
-# # binding.pry
-# @email = arg
-# end
-#
-# def parse
-# @email
-# end
-#
-#
-#
-# end
-
 class EmailAddressParser
-  attr_accessor :name, :csv_emails
+attr_accessor :email
 
-  def initialize(csv_emails)
-#   # you don't need name in here, it is redundant/
-#   @name = name
-    @csv_emails = csv_emails
-  end
+def initialize(arg)
+# binding.pry
+@email = arg
+end
 
-# This will not work because "emails2" below will not be properly parsed
-# def parse
-#   csv_emails.split(/\s*,\s*/)
-# end
+def parse
+@email.split(", ")
+end
 
-  def parse
-    csv_emails.split.collect do |address|
-      address.split(',')
-    end
-    .flatten.uniq
-  end
+
+
 end
