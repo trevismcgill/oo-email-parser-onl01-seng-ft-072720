@@ -13,7 +13,7 @@ def initialize(arg)
 end
 
 def parse
-@email.split(/[,\s]/)
+@email.split(/[,\s]+/)
 end
 
 
