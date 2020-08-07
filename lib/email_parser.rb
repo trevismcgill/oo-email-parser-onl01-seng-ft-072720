@@ -11,6 +11,10 @@ def initialize(arg)
 
 end
 
+def parse
+
+end
+
 
 
 end
